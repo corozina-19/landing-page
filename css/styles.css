@@ -1,0 +1,429 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/Segoe\ UI.ttf");
+}
+
+@font-face {
+    font-family: "Segoe UI Semibold";
+    src: url("../fonts/Segoe\ UI\ Semibold.ttf");
+}
+
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url("../fonts/Segoe\ UI\ Bold.ttf");
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.mainHeader{
+    flex: 1;
+    min-height: 75px;
+    background-color: #6E9CFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.mainHeader ul{
+    text-decoration: none;
+}
+
+.mainHeader ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.mainHeader ul li a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainLogo{
+    position: relative;
+    width: 180px;
+}
+
+.mainHeader .btn-overline{
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 5px 20px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainHeader .btn-success-header{
+    padding: 3px 20px 8px;
+    border-radius: 1em;
+    background-color: #8EC62D;
+}
+
+.mainSection{
+    flex: 19;
+    min-height: 85vh;
+    display: flex;
+}
+
+.leftMainSection, .rightMainSection{
+    flex: 1;
+}
+
+.leftMainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8%;
+}
+
+.leftMainSection h2{
+    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    line-height: 1.2em;
+    margin-bottom: 0.6em;
+}
+
+.leftMainSection h4{
+    font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+    color: #769DF8;
+    font-size: 1.4em;
+    margin-top: 0.8em;
+    align-self: flex-start;
+}
+
+.leftMainSection p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #919191;
+    font-size: 1.6em;
+    line-height: 1.2em;
+}
+
+.leftMainSection .storesSection img{
+    width: 150px;
+    padding-right: 30px;
+}
+
+.leftMainSection .storesSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 1.2em;
+    width: 100%;
+}
+
+.rightMainSection .doctor{
+    background-image: url(../img/landing_ucare.head.png);
+    background-position-x: right;
+    background-size: cover;
+    position: relative;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+    position: absolute
+}
+
+.rightMainSection .signal{
+    background-image: url(../img/img.cardio.headicon.png);
+    background-size: 2400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -8;
+    width: 100%;
+    height: 100%;
+    margin-left: -230px;
+    position: absolute;
+}
+
+.rightMainSection .hand{
+    background-image: url(../img/landing_ucare.head.phone.png);
+    background-size: 1300px;
+    background-repeat: no-repeat;
+    background-position: left;
+    z-index: -8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: -460px;
+    margin-top: -40px;
+}
+
+.mainInfoSection{
+    background-color: white;
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.mainInfoSection .infoSectionGap{
+    flex: 1;
+}
+
+.mainInfoSection .infoSection{
+    flex: 2;
+    border: 1px solid white;
+    min-height: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoSection img{
+    width: 100px;
+}
+
+.infoSection h5{
+    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6em;
+}
+
+.infoSection p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.mainDiagnosis{
+    min-height: 600px;
+    background-image: url(../img/bg.body.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainDiagnosisGap{
+    flex: 2;   
+}
+
+.inHomeDiagnosis{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.inHomeDiagnosis img{
+    width: 80%;
+    align-self: flex-start;
+}
+
+.inHomeDiagnosis h4{
+    font-size: 1.8em;
+    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.diagnosisBodyimage{
+    background-image: url(../img/img.body.svg);
+    background-position: top;
+    min-height: 200px;
+    min-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -120px;
+    margin-bottom: 20px;
+}
+
+
+.diagnosisList{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.diagnosisList .diagnosisListItem{
+    justify-self: flex-start;
+    display: flex;
+    margin: 5px 0;
+}
+
+.diagnosisList .diagnosisListItem img{
+    width: 20px;
+    display: inline-block
+}
+
+.diagnosisList .diagnosisListItem p{
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    color: #555;
+    font-size: 1.2em;
+}
+
+.socialNetworks{
+    flex: 4;
+    max-width: 450px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.mainMeetUcare{
+    flex: 1;
+    display: flex;
+    min-height: 800px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainMeetUcareFeatures{
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+
+.mainMeetUcareFeaturesGap{
+    flex: 1;
+}
+
+.mainMeetUcareFeaturesUpLeft{
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainMeetUcareFeaturesDownRight{
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainMeetUcareFeaturesImage{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainMeetUcareFeaturesImage .centerPhone{
+    background-image: url(../img/img.ucare.appicon.png);
+    background-position: center;
+    background-size: 140%;
+    width: 100%;
+    height: 100%;
+}
+
+.mainMeetUcare h3{
+    font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.mainMeetUcare hr{
+    width: 20%;
+    background-color: #ccc;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.preFooter{
+    flex: 1;
+    min-height: 400px;
+    display: flex;
+}
+
+.preFooter .preFooterGap{
+    flex: 1;
+}
+
+.preFooter .preFooterMainSection{
+    flex: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.preFooterMainSection .resume{
+    display: flex;
+    flex: 1;
+    padding: 40px 10px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 120px;
+}
+
+.resume img{
+    width: 250px;
+}
+
+.resume h4{
+    font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+    color: #769DF8;
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+
+.resume p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    width: 320px;
+    line-height: 1.2em;
+    margin-top: 10px;
+}
+
+.resume .stores{
+    flex: 1;
+    margin-top: 10px;
+}
+
+.stores img{
+    width: 140px;
+}
+
+
+.preFooterMainSection .contact-us{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.contact-us p{
+    font-size: 1.5em;
+    line-height: 1.8em;
+    flex: 1;
+    margin-left: 10px;
+    color: #6E9CFF;
+    font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+    flex: 1;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #6E9CFF;
+}
+
+footer a{
+    color: white !important;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
