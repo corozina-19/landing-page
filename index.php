@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ucare</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/reset.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/styles.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/reset.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css">
 </head>
 <body>
     <div class="mainHeader">
-        <img src="<?php echo get_template_directory_uri() ?>/img/Logo.head.svg" class="mainLogo">
+        <img src="<?php bloginfo('template_url'); ?>/img/Logo.head.svg" class="mainLogo">
         <div class="mainMenu">
             <ul>
                 <li><a href="/">Home</a></li>
