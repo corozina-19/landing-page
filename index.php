@@ -48,7 +48,7 @@
             </p>
         </div>
         <div class="infoSection">
-            <img src="./img/btn.asis.medica.svg" class="infoSectionIcon" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/img/btn.asis.medica.svg" class="infoSectionIcon" alt="">
             <h5>
                 Asistencia médica
             </h5>
