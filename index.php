@@ -6,16 +6,18 @@
     <title>Ucare</title>
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/reset.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/favicon.ico" sizes="32x32">
 </head>
 <body>
     <div class="mainHeader">
         <img src="<?php bloginfo('template_url'); ?>/img/Logo.head.svg" class="mainLogo">
         <div class="mainMenu">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about-us.html">Sobre</a></li>
-                <li><a href="/contact.html">Contacto</a></li>
-                <li><a href="/login.html" class="btn-overline">Entrar</a></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a onclick="openModal('about-us')">Sobre</a></li>
+                <li><a onclick="scrollToSmooth('contact-us')">Contacto</a></li>
+                <!--<li><a href="/login.html" class="btn-overline">Entrar</a></li>-->
                 <li><a href="/diagnosis.html" class="btn-success-header">Diagnóstico</a></li>
             </ul>
         </div>
@@ -23,7 +25,7 @@
     <div class="mainSection">
         <div class="leftMainSection">
             <h2 class="tagLine">Cuéntanos que sientes y recibe asistencia médica</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet.</p>
+            <p>uCare te permite hacer un pre-diagnostico, contactarte con personal medico y brindar toda la información posible sobre la enfermedad sin salir de tu casa.</p>
             <h4>Disponible en:</h4>
             <div class="storesSection">
                 <img src="<?php echo get_template_directory_uri() ?>/img/img.google.play.svg" alt="Gooogle play">
@@ -134,14 +136,14 @@
         <div class="preFooterMainSection">
             <div class="resume">
                 <img src="<?php echo get_template_directory_uri() ?>/img/logo.ucare.footer.svg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+                <p>Nuestro fin es hacer seguimiento de riesgos de salud pública, dar alertas a las personas sobre posibles situaciones de atención y proveer contactos de emergencia para su rápida atención.</p>
                 <h4>Disponible en:</h4>
                 <div class="stores">
                     <img src="<?php echo get_template_directory_uri() ?>/img/img.google.play.svg" alt="Gooogle play">
                 <img src="<?php echo get_template_directory_uri() ?>/img/img.app.store.svg" alt="App store">
                 </div>
             </div>
-            <div class="contact-us">
+            <div class="contact-us" id="contact-us">
                 <p>
                     Nosotros<br>
                     <a>Términos y condicionens</a><br>
@@ -155,5 +157,26 @@
     <footer class="footer">
         <p>By <a href="#">@Ucare</a></p>
     </footer>
+
+    <div class="about-us" id='about-us'>
+        <div class="close-container" onclick="closeModal('about-us')">
+            <i class="fa fa-times"></i>
+        </div>
+        <img src="<?php echo get_template_directory_uri() ?>/img/logo.ucare.footer.svg" alt="">
+        <div class="about-us-body">
+            <h2>Sobre uCare:</h2>
+            <p>
+                Somos desarrolladores, diseñadores, analistas, gestores de proyectos; personas, que al igual que muchas otras en este momento, tuvieron que quedarse en casa, en espera de una solución que aún no es clara. Buscamos una idea para aportar a la sociedad desde nuestras disciplinas, ofreciendo de manera voluntaria y sin ánimo de lucro nuestro apoyo y conocimiento a partir de lo que hacemos y así, de esta manera ayudar a fortalecer la lucha contra la COVID-19.
+            </p>
+            <p>
+                Nuestro fin es crear un seguimiento de posibles riesgos de salud pública más allá del Coronavirus, como Dengue, Sarampión, etc. creemos que de esta manera podemos ayudar a descongestionar los centros de salud a través de un prediagnóstico de enfermedades haciendo especial énfasis en este momento en la COVID-19, identificando noticias falsas y brindando informaciones importantes para prevención de enfermedades infecciosas que nos pueden poner en riesgo.
+            </p>
+            <p>
+                Un prediagnóstico positivo con los síntomas relacionados a la enfermedad permite dar alerta a las personas y que esta, a su vez, pueda tomar medidas más inmediatas para preservar su salud y contactar los profesionales de salud en las clínicas u hospitales más cercanos a sus casas de acuerdo a la información que tenemos en la app. Además de eso, uCare cuenta con un directorio dentro de la app en donde están los números de contacto del gobierno colombiano, de manera que el usuario pueda tener a la mano los números a los cuales puede llamar en caso de emergencia.
+            </p>
+        </div>
+    </div>
+    <script src="<?php bloginfo('template_url'); ?>/js/scroll-smooth.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/modal.js"></script>
 </body>
 </html>
