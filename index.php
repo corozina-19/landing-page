@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/favicon.png" size="32x32">
 </head>
 <body>
     <div class="mainHeader">
@@ -42,21 +42,21 @@
     <div class="mainInfoSection">
         <div class="infoSectionGap"></div>
         <div class="infoSection">
-            <img src="<?php echo get_template_directory_uri() ?>/img/btn.diagnostico.svg" class="infoSectionIcon" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/img/btn.diagnostico.png" class="infoSectionIcon" alt="">
             <h5>
                 Diagnóstico
             </h5>
             <p>
-                Realiza un diagnóstico del COVID-19 desde tu casa.
+                Realiza un diagnóstico de la COVID-19 desde tu casa.
             </p>
         </div>
         <div class="infoSection">
-            <img src="<?php echo get_template_directory_uri() ?>/img/btn.asis.medica.svg" class="infoSectionIcon" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/img/btn.asis.medica.png" class="infoSectionIcon" alt="">
             <h5>
                 Asistencia médica
             </h5>
             <p>
-                Recibe apoyo médico en caso que lo necesites.
+                Recibe apoyo médico en caso de que lo necesites.
             </p>
         </div>
         <div class="infoSection">
@@ -65,7 +65,7 @@
                 Información
             </h5>
             <p>
-                Informaté con los expertos , con artículos oficiales.
+                Conoce las noticias oficiales de la mano de los expertos.
             </p>
         </div>
         <div class="infoSectionGap"></div>
@@ -85,15 +85,15 @@
                 </div>
                 <div class="diagnosisListItem">
                     <img src="<?php echo get_template_directory_uri() ?>/img/btn.check.bodyicon.png" alt="" />
-                    <p>Recibe la asistencia médica en étapas tempranas</p>
+                    <p>Recibe la asistencia médica en etapas tempranas</p>
                 </div>
                 <div class="diagnosisListItem">
                     <img src="<?php echo get_template_directory_uri() ?>/img/btn.check.bodyicon.png" alt="" />
-                    <p>Informáte con artículos verificados sobre el COVID-19</p>
+                    <p>Infórmate con artículos verificados sobre el COVID-19</p>
                 </div>
                 <div class="diagnosisListItem">
                     <img src="<?php echo get_template_directory_uri() ?>/img/btn.check.bodyicon.png" alt="" />
-                    <p>Comparte Ucare a quienes lo necesitan en sus casas</p>
+                    <p>Comparte uCare a quienes lo necesitan en sus casas</p>
                 </div>
                 <div class="diagnosisListItem">
                     <img src="<?php echo get_template_directory_uri() ?>/img/btn.check.bodyicon.png" alt="" />
@@ -101,7 +101,7 @@
                 </div>
                 <div class="diagnosisListItem"> 
                     <img src="<?php echo get_template_directory_uri() ?>/img/btn.check.bodyicon.png" alt="" />
-                    <p>Juntos nos cuidamos y le ganamos al COVID-19</p>
+                    <p>Juntos nos cuidamos y le ganamos a la COVID-19</p>
                 </div>
             </div>
         </div>
@@ -146,8 +146,8 @@
             </div>
             <div class="contact-us" id="contact-us">
                 <p>
-                    Nosotros<br>
-                    <a>Términos y condicionens</a><br>
+                    Conoce más de uCare<br>
+                    <a>Términos y condiciones</a><br>
                     Contacto: <a>contacto@ucare-app.com</a><br>
                     Tel: <a>+57 301 123 4567</a><br>
                 </p>
