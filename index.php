@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/reset.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/favicon.ico" sizes="32x32">
 </head>
 <body>
